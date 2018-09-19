@@ -23,7 +23,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://119.23.73.167:27017/blog
+      uri: mongodb://localhost:27017/blog
   resources:
     static-locations: classpath:/templates/,classpath:/static/
 
@@ -32,7 +32,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-     defaultZone: http://119.23.73.167:30000/eureka
+     defaultZone: http://localhost:37000/eureka
     eureka-server-read-timeout-seconds: 60000
     eureka-server-connect-timeout-seconds: 60000
 

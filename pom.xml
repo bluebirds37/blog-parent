@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-
+        <module>blog-eureka-mars</module>
         <module>blog-microservice-core</module>
     </modules>
 
