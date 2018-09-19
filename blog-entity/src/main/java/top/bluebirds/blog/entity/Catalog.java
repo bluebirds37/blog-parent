@@ -16,21 +16,17 @@ import java.util.Date;
 @NoArgsConstructor
 @Setter
 @Getter
-@Document(collection = "user")
-public class Comment {
+@Document(collection = "t_catalog")
+public class Catalog {
 
     @Id
-    private Long id;
+    private Integer id;
 
     @Indexed
-    private Long articleId;
+    private String catalogName;
 
     @Indexed
-    private String commentName;
-
-    private String commentEmail;
-
-    private Date commentTime;
+    private String catalogKeywords;
 
     private Integer isDelete;
 
@@ -52,6 +48,6 @@ public class Comment {
 
     private Integer deleteUserId;
 
-    private String commentContent;
+    private String catalogDesc;
 
 }

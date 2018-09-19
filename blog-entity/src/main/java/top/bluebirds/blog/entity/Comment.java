@@ -10,28 +10,30 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
+
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
-@Document(collection = "user")
-public class User {
+@Document(collection = "t_comment")
+public class Comment {
 
     @Id
-    private String id;
+    private Long id;
+
     @Indexed
-    private String username;
+    private Long articleId;
 
-    private String password;
+    @Indexed
+    private String commentName;
 
-    private String headPicture;
+    private String commentEmail;
 
-    private String userEmail;
+    private Date commentTime;
 
-    private String userPhone;
+    private Integer isDelete;
 
-    private String nickName;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
@@ -50,6 +52,6 @@ public class User {
 
     private Integer deleteUserId;
 
-    private Integer isDelete;
+    private String commentContent;
 
 }

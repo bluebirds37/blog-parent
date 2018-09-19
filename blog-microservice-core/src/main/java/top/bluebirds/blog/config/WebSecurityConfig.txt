@@ -17,8 +17,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
-import top.bluebirds.blog.dao.UserRepository;
-import top.bluebirds.blog.entity.User;
+import top.bluebirds.blog.UserRepository;
+import top.bluebirds.blog.User;
 import top.bluebirds.blog.pojo.SecurityUser;
 
 import javax.servlet.ServletException;

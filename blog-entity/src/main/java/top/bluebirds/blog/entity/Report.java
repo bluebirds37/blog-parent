@@ -16,17 +16,22 @@ import java.util.Date;
 @NoArgsConstructor
 @Setter
 @Getter
-@Document(collection = "user")
-public class Catalog {
+@Document(collection = "t_report")
+public class Report {
 
     @Id
     private Integer id;
 
     @Indexed
-    private String catalogName;
+    private Long commentId;
 
-    @Indexed
-    private String catalogKeywords;
+    private String reportContent;
+
+    private String reportPhone;
+
+    private String reportEmail;
+
+    private Date reportTime;
 
     private Integer isDelete;
 
@@ -47,7 +52,5 @@ public class Catalog {
     private Integer updateUserId;
 
     private Integer deleteUserId;
-
-    private String catalogDesc;
 
 }

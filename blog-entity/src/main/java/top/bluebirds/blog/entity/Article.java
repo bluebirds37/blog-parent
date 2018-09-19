@@ -16,7 +16,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Setter
 @Getter
-@Document(collection = "user")
+@Document(collection = "t_article")
 public class Article {
 
     @Id

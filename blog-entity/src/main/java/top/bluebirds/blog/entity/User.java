@@ -9,32 +9,30 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-
+import java.util.List;
 
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
-@Document(collection = "user")
-public class Report {
+@Document(collection = "t_user")
+public class User {
 
     @Id
-    private Integer id;
-
+    private String id;
     @Indexed
-    private Long commentId;
+    private String username;
 
-    private String reportContent;
+    private String password;
 
-    private String reportPhone;
+    private String headPicture;
 
-    private String reportEmail;
+    private String userEmail;
 
-    private Date reportTime;
+    private String userPhone;
 
-    private Integer isDelete;
-
+    private String nickName;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
@@ -52,5 +50,9 @@ public class Report {
     private Integer updateUserId;
 
     private Integer deleteUserId;
+
+    private Integer isDelete;
+
+    private List<Role> roles;
 
 }

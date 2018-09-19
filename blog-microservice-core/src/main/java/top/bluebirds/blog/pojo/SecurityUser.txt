@@ -3,7 +3,7 @@ package top.bluebirds.blog.pojo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import top.bluebirds.blog.entity.User;
+import top.bluebirds.blog.User;
 
 import java.util.ArrayList;
 import java.util.Collection;
