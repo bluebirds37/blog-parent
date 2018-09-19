@@ -12,6 +12,9 @@
     <artifactId>blog-dao</artifactId>
 
     <dependencies>
+
+
+
         <dependency>
             <groupId>top.bluebirds.blog</groupId>
             <artifactId>blog-entity</artifactId>
