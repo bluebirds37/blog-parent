@@ -1,0 +1,14 @@
+server:
+  port: 37000
+spring:
+  application:
+    name: blog-eureka-mars
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://119.23.73.167:30000/eureka

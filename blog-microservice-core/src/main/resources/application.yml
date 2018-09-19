@@ -1,0 +1,65 @@
+server:
+  port: 37100
+spring:
+  application:
+    name: blog-microservice-core
+  servlet:
+    multipart:
+      max-file-size: 10000MB
+      max-request-size: 10000MB
+      enabled: true
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    password: root
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+  data:
+    mongodb:
+      uri: mongodb://119.23.73.167:27017/blog
+  resources:
+    static-locations: classpath:/templates/,classpath:/static/
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+     defaultZone: http://119.23.73.167:30000/eureka
+    eureka-server-read-timeout-seconds: 60000
+    eureka-server-connect-timeout-seconds: 60000
+
+swagger:
+  enabled: true
+  title: blog
+  base-package: top.bluebirds.blog.controller
+
+
+logging:
+ level:
+  com.jalja.org.spring.simple.dao.FeignUserClient: DEBUG
+hystrix:
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
+# 设置连接超时时间
+ribbon:
+  ConnectTimeout: 6000
+# 设置读取超时时间
+  ReadTimeout: 6000
+# 对所有操作请求都进行重试
+  OkToRetryOnAllOperations: true
+# 切换实例的重试次数
+  MaxAutoRetriesNextServer: 2
+# 对当前实例的重试次数
+  MaxAutoRetries: 1
