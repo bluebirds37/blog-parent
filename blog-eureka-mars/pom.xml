@@ -14,10 +14,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <exclusions>
+
+            </exclusions>
         </dependency>
     </dependencies>
-
-
 
 
 </project>
