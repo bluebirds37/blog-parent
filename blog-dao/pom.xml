@@ -13,8 +13,6 @@
 
     <dependencies>
 
-
-
         <dependency>
             <groupId>top.bluebirds.blog</groupId>
             <artifactId>blog-pojo</artifactId>
