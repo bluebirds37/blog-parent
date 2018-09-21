@@ -5,7 +5,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import top.bluebirds.blog.Utils.Result;
 import top.bluebirds.blog.dao.CommentRepository;
-import top.bluebirds.blog.entity.Comment;
+import top.bluebirds.blog.pojo.Comment;
 import top.bluebirds.blog.service.CommentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -4,7 +4,7 @@ package top.bluebirds.blog.controller;
 
 import org.springframework.web.bind.annotation.*;
 import top.bluebirds.blog.Utils.Result;
-import top.bluebirds.blog.entity.Article;
+import top.bluebirds.blog.pojo.Article;
 import top.bluebirds.blog.service.ArticleService;
 
 import javax.annotation.Resource;

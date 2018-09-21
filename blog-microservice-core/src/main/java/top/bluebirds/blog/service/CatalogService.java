@@ -1,7 +1,7 @@
 package top.bluebirds.blog.service;
 
 import top.bluebirds.blog.Utils.Result;
-import top.bluebirds.blog.entity.Catalog;
+import top.bluebirds.blog.pojo.Catalog;
 
 import java.util.List;
 

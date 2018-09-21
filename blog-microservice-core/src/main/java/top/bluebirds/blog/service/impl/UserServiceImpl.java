@@ -3,10 +3,9 @@ package top.bluebirds.blog.service.impl;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import top.bluebirds.blog.Utils.Result;
 import top.bluebirds.blog.dao.UserRepository;
-import top.bluebirds.blog.entity.User;
+import top.bluebirds.blog.pojo.User;
 import top.bluebirds.blog.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * User服务层实现类

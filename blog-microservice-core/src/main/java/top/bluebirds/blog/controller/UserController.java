@@ -2,14 +2,18 @@ package top.bluebirds.blog.controller;
 
 
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.web.bind.annotation.*;
+import top.bluebirds.blog.Utils.AlipayUtils;
 import top.bluebirds.blog.Utils.Result;
-import top.bluebirds.blog.entity.User;
+import top.bluebirds.blog.pojo.User;
 import top.bluebirds.blog.service.UserService;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
@@ -32,8 +36,14 @@ public class UserController {
     @Autowired
     private TaskExecutor taskExecutor;
 
+
+    public static Logger getLogger() {
+        return LoggerFactory.getLogger(AlipayUtils.class);
+    }
+
+
     @GetMapping(value = "/goLogin")
-    public void goLogin(HttpServletResponse response) throws IOException {
+    public void goLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //response.sendRedirect("login.html");
 
         /*taskExecutor.execute(() -> {
@@ -46,16 +56,9 @@ public class UserController {
             });
         });*/
 
-        new Thread(
+        getLogger().info("用户:"+request.getSession().getId()+"连接了");
 
-                () -> {
-                    System.out.println("测试:线程名" + Thread.currentThread().getName());
-                    taskExecutor.execute(() -> {
-                        System.out.println("测试:线程名" + Thread.currentThread().getName());
-                    });
-                }
-
-        ).start();
+        AlipayUtils.payTrade();
 
     }
 

@@ -3,10 +3,9 @@ package top.bluebirds.blog.service.impl;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import top.bluebirds.blog.Utils.Result;
 import top.bluebirds.blog.dao.ReportRepository;
-import top.bluebirds.blog.entity.Report;
+import top.bluebirds.blog.pojo.Report;
 import top.bluebirds.blog.service.ReportService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

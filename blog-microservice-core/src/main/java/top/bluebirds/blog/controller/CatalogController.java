@@ -3,7 +3,7 @@ package top.bluebirds.blog.controller;
 
 import org.springframework.web.bind.annotation.*;
 import top.bluebirds.blog.Utils.Result;
-import top.bluebirds.blog.entity.Catalog;
+import top.bluebirds.blog.pojo.Catalog;
 import top.bluebirds.blog.service.CatalogService;
 
 import javax.annotation.Resource;

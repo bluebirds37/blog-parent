@@ -1,7 +1,7 @@
 package top.bluebirds.blog.dao;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import top.bluebirds.blog.entity.User;
+import top.bluebirds.blog.pojo.User;
 
 public interface UserRepository extends MongoRepository<User,Integer> {
 

@@ -2,7 +2,7 @@ package top.bluebirds.blog.service;
 
 
 import top.bluebirds.blog.Utils.Result;
-import top.bluebirds.blog.entity.Comment;
+import top.bluebirds.blog.pojo.Comment;
 
 import java.util.List;
 

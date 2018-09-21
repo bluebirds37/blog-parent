@@ -5,7 +5,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import top.bluebirds.blog.Utils.Result;
 import top.bluebirds.blog.dao.ArticleRepository;
-import top.bluebirds.blog.entity.Article;
+import top.bluebirds.blog.pojo.Article;
 import top.bluebirds.blog.service.ArticleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

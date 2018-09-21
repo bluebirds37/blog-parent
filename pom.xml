@@ -11,7 +11,7 @@
     <modules>
         <module>blog-eureka-mars</module>
         <module>blog-microservice-core</module>
-        <module>blog-entity</module>
+        <module>blog-pojo</module>
         <module>blog-dao</module>
     </modules>
 
