@@ -58,7 +58,7 @@
 
         <dependency>
             <groupId>top.bluebirds.blog</groupId>
-            <artifactId>blog-dao</artifactId>
+            <artifactId>blog-service-article</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

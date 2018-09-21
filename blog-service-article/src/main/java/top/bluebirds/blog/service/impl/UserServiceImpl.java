@@ -1,16 +1,16 @@
 package top.bluebirds.blog.service.impl;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import top.bluebirds.blog.Utils.Result;
 import top.bluebirds.blog.dao.UserRepository;
 import top.bluebirds.blog.pojo.User;
 import top.bluebirds.blog.service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;

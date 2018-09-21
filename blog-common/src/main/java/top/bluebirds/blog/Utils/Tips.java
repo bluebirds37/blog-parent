@@ -11,11 +11,6 @@ public enum Tips {
     SUCCESS(200,"成功"),
 
 
-
-
-
-
-
     ;
     public Integer code;
     public String msg;
